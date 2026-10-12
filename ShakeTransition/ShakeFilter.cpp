@@ -6,7 +6,7 @@
 #include "filter2.h"
 #include "ShakeSettings.h"
 #include "StandardShakeEffect.h"
-#include "TrackItems.cpp"
+#include "SettingItems.cpp"
 
 namespace
 {
