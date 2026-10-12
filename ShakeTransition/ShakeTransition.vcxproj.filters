@@ -1,40 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="ヘッダー ファイル">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="リソース ファイル">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="ソース ファイル\Effects">
+    <Filter Include="Effects">
       <UniqueIdentifier>{1108acda-2936-4cd8-9a17-178bc009a869}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Effects">
+    <Filter Include="Effects\Header">
       <UniqueIdentifier>{13a4f9ea-7c75-4bdf-b264-48693c4c9c76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\StandardShakeEffect">
+      <UniqueIdentifier>{3fe005cb-5986-4f86-9263-d75b47e62df6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="StandardShakeEffect.cpp">
-      <Filter>ソース ファイル\Effects</Filter>
-    </ClCompile>
-    <ClCompile Include="ShakeFilter.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="ShakeEffectBase.h">
-      <Filter>ヘッダー ファイル\Effects</Filter>
+      <Filter>Effects\Header</Filter>
     </ClCompile>
     <ClCompile Include="StandardShakeEffect.h">
-      <Filter>ヘッダー ファイル\Effects</Filter>
+      <Filter>Effects\Header</Filter>
     </ClCompile>
-    <ClCompile Include="ShakeSettings.h">
-      <Filter>ヘッダー ファイル</Filter>
+    <ClCompile Include="ShakeFilter.cpp">
+      <Filter>Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="ShakeSettings.h" />
+    <ClCompile Include="StandardShakeEffect.cpp">
+      <Filter>Effects\StandardShakeEffect</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

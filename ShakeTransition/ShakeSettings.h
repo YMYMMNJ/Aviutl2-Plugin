@@ -5,7 +5,7 @@ struct ShakeSettings
 {
     double ShakeIntensity = 12.0;
     double Speed = 1.0;
-    double Zoom = 1.05;
+    double Zoom = 1.00;
     double CenterX = 0.5;
     double CenterY = 0.5;
 };

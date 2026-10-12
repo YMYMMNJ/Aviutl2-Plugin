@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="ShakeTransition/ShakeTransition.vcxproj" />
+  <Project Path="ShakeTransition/ShakeTransition.vcxproj" Id="4bb1d243-94ac-4939-8f95-eb06c8092b29" />
 </Solution>

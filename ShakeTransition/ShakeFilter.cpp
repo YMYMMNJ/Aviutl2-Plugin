@@ -9,12 +9,14 @@
 
 namespace
 {
-    auto intensityItem = FILTER_ITEM_TRACK(L"Shake Intensity", 12.0, 0.0, 100.0, 1.0);
-    auto speedItem = FILTER_ITEM_TRACK(L"Speed", 1.0, 0.1, 5.0, 0.1);
-    auto zoomItem = FILTER_ITEM_TRACK(L"Zoom", 1.0, 1.0, 1.5, 0.01);
-    auto enabledItem = FILTER_ITEM_CHECK(L"Shake", true);
+    //auto は C#で言う var と同じ
+    auto intensityItem = FILTER_ITEM_TRACK(L"揺れの強さ", 25.0, 0.0, 500.0, 1.0);
+    auto speedItem = FILTER_ITEM_TRACK(L"速度", 1.0, 0.1, 5.0, 0.1);
+    auto zoomItem = FILTER_ITEM_TRACK(L"ズーム", 1.0, 1.0, 5.0, 0.01);
+    auto enabledItem = FILTER_ITEM_CHECK(L"IsEnabled", true);
 
-    void* items[] = {
+    void* items[] = 
+    {
         &intensityItem,
         &speedItem,
         &zoomItem,
@@ -36,6 +38,11 @@ namespace
         return settings;
     }
 
+    bool IsEnabled()
+    {
+        return enabledItem.value && intensityItem.value > 0.0;
+    }
+
     bool func_proc_video(FILTER_PROC_VIDEO* video)
     {
         if (video == nullptr ||
@@ -46,7 +53,7 @@ namespace
             return false;
         }
 
-        if (!enabledItem.value || intensityItem.value <= 0.0)
+        if (!IsEnabled())
             return true;
 
         const int width = video->object->width;
@@ -68,9 +75,7 @@ namespace
 
         const ShakeOffset offset = shakeEffect->Calculate(frame, settings);
 
-        const double scale = settings.Zoom > 1.0
-            ? settings.Zoom
-            : 1.0;
+        const double scale = settings.Zoom > 1.0 ? settings.Zoom : 1.0;
 
         const double pivotX = settings.CenterX * (width - 1);
         const double pivotY = settings.CenterY * (height - 1);
