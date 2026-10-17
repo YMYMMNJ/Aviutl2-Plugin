@@ -7,5 +7,7 @@ class ShakeEffectBase
 public:
     virtual ~ShakeEffectBase() = default;
 
-    virtual ShakeOffset Calculate(double frame, const ShakeSettings& settings) const = 0;
+    virtual ShakeOffset Calculate(
+        double frame,
+        const ShakeSettings& settings) const = 0;
 };
