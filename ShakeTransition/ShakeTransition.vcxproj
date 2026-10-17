@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4bb1d243-94ac-4939-8f95-eb06c8092b29}</ProjectGuid>
+    <ProjectGuid>{DF90539D-A9C7-081B-1E9E-8C6494DD082E}</ProjectGuid>
     <RootNamespace>ShakeTransition</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -111,7 +111,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\yaman\Documents\Dev\Aviutl\aviutl2_sdk_mirror\include\aviutl2_sdk</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\yaman\Documents\Dev\Aviutl\aviutl2_sdk_mirror-main\aviutl2_sdk_mirror-main\include\aviutl2_sdk</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
