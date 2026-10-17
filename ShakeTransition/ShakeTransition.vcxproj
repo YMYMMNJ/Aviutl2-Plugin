@@ -145,7 +145,6 @@
     <ClCompile Include="ShakeSettings.h" />
     <ClCompile Include="StandardShakeEffect.h" />
     <ClCompile Include="StandardShakeEffect.cpp" />
-    <ClCompile Include="SettingItems.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

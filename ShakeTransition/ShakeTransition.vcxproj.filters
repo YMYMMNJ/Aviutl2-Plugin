@@ -10,9 +10,6 @@
     <Filter Include="Effects\StandardShakeEffect">
       <UniqueIdentifier>{3fe005cb-5986-4f86-9263-d75b47e62df6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Effects\SettingItems">
-      <UniqueIdentifier>{b03d9986-4a42-49b0-9006-e20f9ea5f811}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ShakeEffectBase.h">
@@ -27,9 +24,6 @@
     <ClCompile Include="ShakeSettings.h" />
     <ClCompile Include="StandardShakeEffect.cpp">
       <Filter>Effects\StandardShakeEffect</Filter>
-    </ClCompile>
-    <ClCompile Include="SettingItems.cpp">
-      <Filter>Effects\SettingItems</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
